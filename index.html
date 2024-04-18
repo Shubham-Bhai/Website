@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>PortFolio - Shubham Dewangan</title>
   <link rel="icon" type="image/jpg"
@@ -72,10 +71,10 @@
           Hi I am,
         </h2>
         <h1 class="mb-4 text-2xl font-bold text-cyan-300 sm:text-4xl md:mb-4 md:text-5xl">Shubham Dewangan</h1>
-        <p class="max-w-md leading-relaxed text-gray-200 xl:text-lg">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares characteristics of real text.
-        </p>
+        <div class="typewriter">
+          <p id="text" class="max-w-md leading-relaxed text-gray-200 xl:text-lg"> 
+          </p>
+        </div> 
       </div>
 
       <div class="mb-12 flex w-full md:mb-16 lg:w-2/3">
@@ -100,10 +99,9 @@
       <!-- text - start -->
       <div class="mb-10 md:mb-16">
         <h2 class="mb-4 text-center text-2xl font-bold text-white md:mb-6 lg:text-3xl">Frequently asked questions</h2>
-
-        <p class="mx-auto max-w-screen-md text-center text-gray-200 md:text-lg">This is a section of some simple filler
+        <!-- <p class="mx-auto max-w-screen-md text-center text-gray-200 md:text-lg">This is a section of some simple filler
           text, also known as placeholder text. It shares some characteristics of a real written text but is random or
-          otherwise generated.</p>
+          otherwise generated.</p> -->
       </div>
       <!-- text - end -->
 
@@ -265,6 +263,86 @@
       </div>
     </div>
   </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white  ">My Favourite Anime</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <!-- <p class="lg:w-1/10 w-full leading-relaxed text-gray-500">
+          Chronological Order</p> -->
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://m.media-amazon.com/images/M/MV5BNGYyNmI3M2YtNzYzZS00OTViLTkxYjAtZDIyZmE1Y2U1ZmQ2XkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-4">Your Name</h2>
+            <p class="leading-relaxed text-white">Your Name, my first anime—a touching movie, around 1 hour and 45 minutes long, a truly great start.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://m.media-amazon.com/images/I/810Xo+d8xlL._AC_UF1000,1000_QL80_.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8.8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-4">Naruto Whole Series</h2>
+            <p class="leading-relaxed text-white">Naruto's a masterpiece, with 720 episodes; 41% filler. Skipped the filler, a bit slow at first, but totally worth it.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://m.media-amazon.com/images/I/716ASj7z2GL._AC_UF1000,1000_QL80_.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8.5/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-  4">Death Note</h2>
+            <p class="leading-relaxed text-white">"Death Note" hooks you with its gripping storyline in just 37 episodes, making it a must-watch thriller.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://cdn.myanimelist.net/images/anime/3/67177.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-4">Your Lie In April</h2>
+            <p class="leading-relaxed text-white">"Your Lie in April," with its 22 episodes, combines emotional depth, beautiful music, and moments that brought tears for hours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXPUIyHaGqacE1uMchvCWx1iko6boLN0xq3an2LB9XDg&s" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">9.8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-4">Grave Of Fireflies</h2>
+            <p class="leading-relaxed text-white">"Grave of the Fireflies," a 1988 film watched with my mummy, is sure to evoke tears and is worth every moment.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://m.media-amazon.com/images/M/MV5BZGRkOGMxYTUtZTBhYS00NzI3LWEzMDQtOWRhMmNjNjJjMzM4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">9.8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-4">Silent Voice </h2>
+            <p class="leading-relaxed text-white">"Silent Voice," my all-time favorite, is a 2-hour masterpiece depicting a deaf girl in a class of bullies, sure to bring tears.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://m.media-amazon.com/images/M/MV5BOTY0MDg1YmMtZDFlYi00NzQ2LTlmODUtYTYzZjRlYzI5NDBiXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">6/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-  4">5 Centimeters Per Second</h2>
+            <p class="leading-relaxed text-white">IDK i dont like this movie</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-sky-950 p-6 rounded-lg">
+            <img class="h-45 rounded w-full object-cover object-center mb-6 transition duration-200 hover:scale-105" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8momELkHl-XEZT8v9FlwqvxujQnGlpaFCPK0FLxlLxQ&s" alt="INCOMING SOON">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">8/10</h3>
+            <h2 class="text-lg text-green-500 font-medium title-font mb-  4">SOON</h2>
+            <p class="leading-relaxed text-white">SOON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="text-gray-600 body-font" id="interest">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
@@ -380,6 +458,8 @@
       </div>
     </div>
   </section>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
