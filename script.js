@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const texts = [
     "Currently, I'm a student in the 11th grade.",
-    "Anime holds a special place in my heart.",
+    "I'm on a journey to master programming.",
     "Despite my skill level, I enjoy playing chess."
   ];
   
