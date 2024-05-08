@@ -7,33 +7,41 @@ body{
 }
 
 #text {
-    font-family: monospace; /* Use monospace font for consistent character widths */
-    font-size: 17px; /* Adjust font size as needed */
-    color: #ffffff; /* Text color */
-    margin: 0px 0; /* Add margin for spacing */
-    white-space: nowrap; /* Prevent text from wrapping to the next line */
-    overflow: hidden; /* Hide overflow text */
-    display: inline-block; /* Ensure text behaves as block element */
+  font-family: monospace; /* Use monospace font for consistent character widths */
+  font-size: 18px; /* Adjust font size as needed */
+  color: #ffffff; /* Text color */
+  margin: 0; /* Add margin for spacing */
+  white-space: pre-wrap; /* Allow text to wrap to the next line */
+  overflow: hidden; /* Hide overflow text */
+  display: inline-block; /* Ensure text behaves as block element */
+  max-width: 100%; /* Set maximum width to 100% of parent container */
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.3em; /* Adjust cursor width */
+  height: 1em; /* Adjust cursor height */
+  margin-left: 2px; /* Adjust cursor margin */
+  background-color: black; /* Cursor color */
+  animation: blinkCursor 0.7s infinite; /* Blinking animation */
+}
+
+@keyframes blinkCursor {
+  0% {
+    opacity: 1;
   }
-  
-  .cursor {
-    display: inline-block;
-    width: 0.3em; /* Adjust cursor width */
-    height: 1em; /* Adjust cursor height */
-    margin-left: 2px; /* Adjust cursor margin */
-    background-color: black; /* Cursor color */
-    animation: blinkCursor 0.7s infinite; /* Blinking animation */
+  50% {
+    opacity: 0;
   }
-  
-  @keyframes blinkCursor {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  #text {
+    white-space: normal; /* Allow text to wrap normally on smaller screens */
+    max-width: none; /* Remove maximum width restriction */
+  }
+}
