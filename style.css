@@ -1,6 +1,8 @@
-body{
-    background-color: rgb(7, 1, 40);
+/* style.css */
+body {
+  background-color: rgb(7, 1, 40) !important;
 }
+
 
 .qna{
     background-color: rgb(8, 3, 67);
