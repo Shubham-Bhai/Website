@@ -18,9 +18,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   const texts = [
-    "Currently, I'm a student in the 11th grade.",
+    "Currently, I'm a student in the 12th grade.",
     "I'm on a journey to master programming.",
-    "Despite my skill level, I enjoy playing chess."
+    "Actually.",
+    "It was all part of my plan.",
+    "Wait For The Countdown to end."
   ];
   
   const delay = 50; // Change this to set the interval (in milliseconds) between typing each character
@@ -52,3 +54,37 @@ document.addEventListener("DOMContentLoaded", function() {
   // Start the typing process
   type();
   
+// countdown.js
+
+// Configure your countdown duration here (in units of time):
+const Day = 1;     // number of days
+const Hour = 0;    // number of hours
+const Minute = 0;  // number of minutes
+const Sec = 0;     // number of seconds
+
+// Calculate end time based on now + configured duration
+const now = new Date();
+const end = new Date(
+  now.getTime()
+  + Day * 7000 * 60 * 60 * 1000
+  + Hour * 60 * 60 * 1000
+  + Minute * 60 * 1000
+  + Sec * 1000
+);
+
+// Update the countdown display
+function upd() {
+  const diff = end - new Date();
+  const d = Math.floor(diff / (24 * 60 * 60 * 1000));
+  const h = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+  const m = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+  const s = Math.floor((diff % (60 * 1000)) / 1000);
+
+  document.getElementById('timer').textContent =
+    `${d}d : ${h}h : ${m}m : ${s}s`;
+}
+
+// Initialize and run every second
+upd();
+setInterval(upd, 1000);
+
