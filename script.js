@@ -56,25 +56,17 @@ document.addEventListener("DOMContentLoaded", function() {
   
 // countdown.js
 
-// Configure your countdown duration here (in units of time):
-const Day = 1;     // number of days
-const Hour = 0;    // number of hours
-const Minute = 0;  // number of minutes
-const Sec = 0;     // number of seconds
+// Set your fixed reveal date/time here
+const end = new Date("2025-05-10T12:00:00"); // YYYY-MM-DDTHH:MM:SS (24-hour format)
 
-// Calculate end time based on now + configured duration
-const now = new Date();
-const end = new Date(
-  now.getTime()
-  + Day * 7000 * 60 * 60 * 1000
-  + Hour * 60 * 60 * 1000
-  + Minute * 60 * 1000
-  + Sec * 1000
-);
-
-// Update the countdown display
 function upd() {
   const diff = end - new Date();
+  
+  if (diff <= 0) {
+    document.getElementById('timer').textContent = "It's time! 🎉";
+    return;
+  }
+
   const d = Math.floor(diff / (24 * 60 * 60 * 1000));
   const h = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
   const m = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
@@ -84,7 +76,5 @@ function upd() {
     `${d}d : ${h}h : ${m}m : ${s}s`;
 }
 
-// Initialize and run every second
 upd();
 setInterval(upd, 1000);
-
