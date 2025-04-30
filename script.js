@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // countdown.js
 
 // Set your fixed reveal date/time here
-const end = new Date("2025-05-10T12:00:00"); // YYYY-MM-DDTHH:MM:SS (24-hour format)
+const end = new Date("2026-01-27T12:00:00"); // YYYY-MM-DDTHH:MM:SS (24-hour format)
 
 function upd() {
   const diff = end - new Date();
